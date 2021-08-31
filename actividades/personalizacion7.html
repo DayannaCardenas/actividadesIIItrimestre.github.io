@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prsonalizacion formulario</title>
+</head>
+<body>
+    <form action="../index.html">
+        <fieldset>
+            <legend>Sus Datos</legend>
+
+    <label>Nombre:<br /><input type="text"name="Nombre" /></label><br />
+    <label>email:<br /><input type="text"name="email" /></label><br />
+
+</form>
+
+    <fieldset>
+        <legend>Sus Opinion</legend>
+        <p>¿Como Se Enteraron De Nosotros?</p>
+    <select name="devices">
+        <option value="Google">Google</option>
+        <option value="Explorer">Explorer</option>
+        <option value="Youtobe">Youtobe</option>
+    </select>
+
+        <form action="..//index.html">
+            <p> ¿Volveria a Visitarnos?
+        <br />
+        <input type="radio"name="genre"value="Si"checked="checked" /> Si
+        <input type="radio"name="genre"value="No" /> No
+        <input type="radio"name="genre"value="Quizas" /> Quizas
+            </p>
+    </form>
+
+        <form action="../index.html">
+            <p>Como te parecio esta experiencia,(Puede seleccionar mas de una opción manteniendo
+                presionada la tecla control)</p>
+                <select name="instruments"size="3"Multiple="Multiple">
+                    <option value="Chevere">Chevere</option>
+                    <option value="Aburrida">Aburrida</option>
+                    <option value="Larga">Larga</option>
+                    <option value="Interesante">Interesante</option>
+                </select>
+            </form>
+
+            <form action="../index.html">
+                <p>Ingrese sus comentarios....</p>
+                <textarea name="comments" cols="60" rows="6">Es muy Importante para nosotros...</textarea>
+                </form>
+
+                <form action="../index.html">
+
+                    <input type="checkbox"name="service"value="Inscribete para actualizaciones por correo electronico"
+                    checked="checked" /> Inscribete para actualizaciones por correo electronico 
+                    <input type="image"src="images/link.gif" width="210" height="50" />
+                    </form>
+</body>
+</html>

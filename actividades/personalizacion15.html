@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Tale Properties</title>
+    <style type="text/css">
+    table { width: 810px;}
+    h1 { text-align: center; font-family: cursive; color: #F42DF9;}
+    th, td { padding: 10px 10px 10px 10px;font-family: cursive;
+    font-size: 95%; border-bottom: 5px solid #F911B8 ; border-top: 5px solid#F911B8; text-align: center;}
+    tr.even { background-color: #DEB1F3 ;font-family: cursive;}
+    tr:hover { background-color: #2cd3cd;}
+    tr.titulo { background-color: #CCC8CE;}
+    .money { text-align: center;font-family: cursive;}
+    p { font-family: cursive;}
+    ul { list-style-image: url("./images/star.png"); font-family: cursive;}
+    input { 
+        border-bottom: 3px dotted #b11f1f;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding: 5px;
+        width: 280px;
+        margin-bottom: 20px;}
+    input:focus {border: 3px dotted #a32828;outline: none;}
+    input#submit {
+        color: #070707;
+        background-color: #DEB1F3;
+        border: 3px solid black;
+        border-radius: 8px;
+        width: 80px;}
+    input#submit:hover { color: #DEB1F3; background-color: #0c0c0c;}
+    fieldset {
+        width: 350px;
+        border: 3px solid #F911B8;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: right;}
+    legend {
+        background-color: #DEB1F3;
+        border: 3px solid #0f0f0f;
+        border-radius: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <h1>DEPOSITO</h1>
+    <h1>SERVICIO LAS 24 HORAS</h1>
+    <p>Encuentre gran vaiedad de gaseosas las cuales encontrara en la siguiente tabla:</p>
+    <table>
+        <tr class="titulo">
+            <th>Marca</th><th>Tamaño</th><th class="money">Precio de compra</th><th class="money">Precio a la venta</th>
+        </tr>
+        <tr class="even">
+            <td>Colombiana</td><td>2.5 L</td><td class="money">$3.000</td>
+            <td class="money">$3.500</td>
+        </tr>
+        <tr class="even"><td>Coca Cola</td><td>1.5 L</td><td class="money">$3.300</td>
+            <td class="money">$3.800</td>
+        </tr>
+        <tr class="even">
+            <td>Big Cola</td><td>2.1 L</td><td class="money">$2.300</td>
+            <td class="money">$2.800</td>
+        </tr>
+        <tr class="even">
+            <td>Pony Malta</td><td>2 L</td><td class="money">$3.700</td>
+            <td class="money">$4.200</td>
+        </tr>
+    </table>
+    <p> Tambien puede encontrar productos como por ejemplo:</p>
+        <ul>
+            <li>Cervezas.</li>
+            <li>Ron.</li>
+            <li>Aguardientes.</li>
+            <li>Wisky.</li>
+            <li>Galguerias.</li>
+        </ul>
+    <p>Para mayor informacion puede registrarse en nuestra pagina.</p>
+    <form>
+        <fieldset>
+            <legend>Inscribete</legend>
+            <label for="name">Nombre:</label><input type="text" id="name" />
+            <label for="email">Email:</label><input type="text" id="email" />
+            <input type="submit" value="Suscribete" id="submit" />
+        </fieldset>
+    </form>
+</body>
+</html>
